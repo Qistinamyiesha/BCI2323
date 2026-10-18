@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website | Home</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4fa;
+            color: #1c2940;
+        }
+
+        /* Navigation Menu */
+        nav {
+            background: #111d35;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #78b7ff;
+        }
+
+        /* Main Section */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #e3edff, #f8fbff);
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin: 15px 0;
+        }
+
+        .hero p {
+            color: #5b6a80;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            background: #254e9a;
+            color: white;
+            padding: 14px 28px;
+            margin: 8px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #16366d;
+            transform: translateY(-3px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #254e9a;
+            border: 2px solid #254e9a;
+        }
+
+        .btn-outline:hover {
+            background: #254e9a;
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background: #111d35;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 10px;
+            }
+
+            .hero h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">My Website</div>
+
+        <div>
+            <a href="partD/personal-details.html">About Me</a>
+            <a href="partD/my-table.html">My Table</a>
+            <a href="partD/university.html">University</a>
+        </div>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section class="hero">
+        <h3>WELCOME TO MY WEBSITE</h3>
+
+        <h1>Explore My Website</h1>
+
+        <p>
+            Discover more information about me
+            by exploring the pages below.
+        </p>
+
+        <a href="partD/personal-details.html" class="btn">
+            About Me →
+        </a>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Website. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

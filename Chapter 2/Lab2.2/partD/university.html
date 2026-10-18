@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University | My Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #edf2fa;
+            color: #1c2940;
+        }
+
+        /* Navigation */
+        nav {
+            background: #111d35;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 15px;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #80b8ff;
+        }
+
+        /* Page Heading */
+        .page-heading {
+            text-align: center;
+            padding: 55px 20px 25px;
+        }
+
+        .page-heading h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .page-heading p {
+            color: #65738c;
+        }
+
+        /* University Card */
+        .university-card {
+            max-width: 850px;
+            margin: 20px auto 60px;
+            padding: 35px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.07);
+        }
+
+        .campus-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 25px;
+        }
+
+        .university-card h2 {
+            font-size: 27px;
+            color: #1c2940;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            color: #66758b;
+            line-height: 1.8;
+            margin-bottom: 25px;
+        }
+
+        /* Information Boxes */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        .info-box {
+            background: #f2f6fd;
+            padding: 22px;
+            border-radius: 10px;
+        }
+
+        .info-box h3 {
+            color: #254e9a;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .info-box p {
+            color: #56657b;
+            line-height: 1.6;
+        }
+
+        /* Website Button */
+        .website-button {
+            display: block;
+            text-align: center;
+            padding: 16px;
+            margin-top: 25px;
+            background: #254e9a;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .website-button:hover {
+            background: #16366d;
+        }
+
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 25px auto 0;
+            color: #254e9a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #111d35;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav div:last-child {
+                text-align: center;
+                line-height: 2;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .university-card {
+                margin: 20px 15px 40px;
+                padding: 20px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .campus-image {
+                height: 200px;
+            }
+
+            .page-heading h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="logo">My Website</div>
+
+        <div>
+            <a href="../partD.html">Home</a>
+            <a href="personal-details.html">
+                Personal Details
+            </a>
+            <a href="my-table.html">My Table</a>
+            <a href="university.html" class="active">
+                University
+            </a>
+        </div>
+    </nav>
+
+    <!-- Heading -->
+    <section class="page-heading">
+        <h1>My University</h1>
+        <p>Discover where I study</p>
+    </section>
+
+    <!-- University Information -->
+    <main class="university-card">
+
+        <img
+            src="../images/umpsa-campus.jpg"
+            alt="UMPSA University Campus"
+            class="campus-image"
+        >
+
+        <h2>
+            Universiti Malaysia Pahang
+            Al-Sultan Abdullah (UMPSA)
+        </h2>
+
+        <p class="description">
+            Universiti Malaysia Pahang
+            Al-Sultan Abdullah (UMPSA) is a
+            public technical university located
+            in Pahang, Malaysia.
+
+            The university focuses on engineering,
+            technology and related fields.
+            It provides students with practical
+            learning experiences, modern facilities
+            and opportunities to develop skills
+            for their future careers.
+        </p>
+
+        <div class="info-grid">
+
+            <div class="info-box">
+                <h3>University Name</h3>
+                <p>
+                    Universiti Malaysia Pahang
+                    Al-Sultan Abdullah
+                </p>
+            </div>
+
+            <div class="info-box">
+                <h3>Location</h3>
+                <p>Pahang, Malaysia</p>
+            </div>
+
+            <div class="info-box">
+                <h3>Campuse</h3>
+                <p>Pekan</p>
+            </div>
+
+            <div class="info-box">
+                <h3>My Course</h3>
+                <p>Software Engineering</p>
+            </div>
+
+        </div>
+
+        <!-- Official University Link -->
+        <a
+            href="https://www.umpsa.edu.my/en"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="website-button"
+        >
+            Visit Official UMPSA Website ↗
+        </a>
+
+        <!-- Back to Main Page -->
+        <a href="../partD.html" class="back-button">
+            ← Back to Home
+        </a>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Website. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

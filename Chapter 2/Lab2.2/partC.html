@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and input in HTML</title>
+   
+</head>
+<body>
+    <h1>Lab Exercise 2.1 HTML PART B</h1>
+    //form untuk submit all data later
+    <form action="submit.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label>Gender</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="Female" name="gender" value="Female">
+        <label for="Female">Female</label>
+
+        <br><br>
+        <label for="age">Age:</label>
+        <select>
+            <option value="">Select</option>
+            <option value="18-25">18-25</option>
+            <option value="26-35">26-35</option>
+            <option value="36-45">36-45</option>
+        </select><br><br>
+
+        <label for="interest">Interest:</label><br>
+        <input type=""><br><br>
+
+        <p>Subscribe to Newsletter: <input type="checkbox">Yes<input type="checkbox">No<input type="checkbox">Not Interested</p>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>

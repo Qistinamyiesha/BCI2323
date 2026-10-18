@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 24px;
+    background: #eef3fa;
+    color: #24344d;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.page {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-spacing: 0;
+    background: #fff;
+    box-shadow: 0 8px 28px rgba(23, 48, 82, 0.12);
+}
+
+.banner {
+    padding: 32px 40px;
+    background: #17345d;
+    color: #fff;
+}
+
+.banner h1 {
+    margin: 0;
+}
+
+.banner p {
+    margin: 8px 0 0;
+    color: #d5e4f7;
+}
+
+.navigation {
+    padding: 16px 32px;
+    background: #dce9f8;
+}
+
+.navigation a,
+.menu-link {
+    display: inline-block;
+    margin: 4px 12px 4px 0;
+    color: #17345d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navigation a:hover,
+.menu-link:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 32px 40px;
+    vertical-align: top;
+}
+
+.content h2 {
+    margin-top: 0;
+    color: #17345d;
+}
+
+.menu {
+    width: 100%;
+    border-spacing: 0 12px;
+}
+
+.menu td {
+    padding: 18px;
+    border: 1px solid #dce5f0;
+    background: #f5f8fd;
+}
+
+.menu-link {
+    margin: 0;
+    color: #245f9e;
+    font-size: 18px;
+}
+
+.details {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.details th,
+.details td {
+    padding: 12px;
+    border: 1px solid #dce5f0;
+    text-align: left;
+}
+
+.details th {
+    background: #f2f6fc;
+}
+
+.footer {
+    padding: 16px 32px;
+    background: #17345d;
+    color: #d5e4f7;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+    }
+
+    .banner,
+    .content {
+        padding: 24px;
+    }
+
+    .navigation {
+        padding: 12px 24px;
+    }
+}

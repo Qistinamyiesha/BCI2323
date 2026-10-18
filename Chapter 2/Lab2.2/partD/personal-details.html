@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details | My Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #edf2fa;
+            color: #1c2940;
+        }
+
+        /* Navigation */
+        nav {
+            background: #111d35;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 15px;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #80b8ff;
+        }
+
+        /* Page Heading */
+        .page-heading {
+            text-align: center;
+            padding: 55px 20px 25px;
+        }
+
+        .page-heading h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .page-heading p {
+            color: #65738c;
+        }
+
+        /* Profile Card */
+        .profile-card {
+            max-width: 800px;
+            margin: 20px auto 60px;
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.07);
+        }
+
+        .profile-top {
+            text-align: center;
+        }
+
+        .profile-picture {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #dbe9ff;
+            margin-bottom: 18px;
+        }
+
+        .profile-top h2 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .profile-top p {
+            color: #718096;
+        }
+
+        /* Details Grid */
+        .details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-top: 35px;
+            padding-top: 30px;
+            border-top: 1px solid #e1e7f0;
+        }
+
+        .detail {
+            background: #f5f8fd;
+            padding: 18px;
+            border-radius: 10px;
+        }
+
+        .detail h3 {
+            color: #254e9a;
+            font-size: 14px;
+            margin-bottom: 9px;
+        }
+
+        .detail p {
+            font-size: 16px;
+            overflow-wrap: anywhere;
+        }
+
+        /* Back Button */
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 35px auto 0;
+            padding: 13px 25px;
+            background: #254e9a;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background: #16366d;
+        }
+
+        /* Footer */
+        footer {
+            background: #111d35;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav div:last-child {
+                text-align: center;
+                line-height: 2;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .profile-card {
+                margin: 20px 15px 40px;
+                padding: 25px;
+            }
+
+            .details-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .page-heading h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="logo">My Website</div>
+
+        <div>
+            <a href="../partD.html">Home</a>
+            <a href="personal-details.html" class="active">
+                Personal Details
+            </a>
+            <a href="my-table.html">My Table</a>
+            <a href="university.html">University</a>
+        </div>
+    </nav>
+
+    <!-- Page Title -->
+    <section class="page-heading">
+        <h1>Personal Details</h1>
+        <p>Get to know more about me</p>
+    </section>
+
+    <!-- Profile Information -->
+    <main class="profile-card">
+
+        <div class="profile-top">
+            <img
+                src="../../Lab2.1/images/Myiesha.jpg"
+                alt="My Profile Picture"
+                class="profile-picture"
+            >
+
+            <h2>Your Full Name</h2>
+            <p>University Student</p>
+        </div>
+
+        
+        <div class="details-grid">
+
+            <div class="detail">
+                <h3>FULL NAME</h3>
+                <p>SITI QISTINA MYIESHA BINTI AHMAD HAMBALI</p>
+            </div>
+
+            <div class="detail">
+                <h3>MATRIC ID</h3>
+                <p>CB26060</p>
+            </div>
+
+            <div class="detail">
+                <h3>COURSE</h3>
+                <p>Software Engineering</p>
+            </div>
+
+            <div class="detail">
+                <h3>YEAR OF STUDY</h3>
+                <p>Year 1</p>
+            </div>
+
+            <div class="detail">
+                <h3>HOMETOWN</h3>
+                <p>Bandar Indera Mahkota, Kuantan, Pahang</p>
+            </div>
+
+            <div class="detail">
+                <h3>EMAIL ADDRESS</h3>
+                <p>
+                    <a>
+                        cb26060@adab.umpsa.edu.my
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+
+        <a href="../partD.html" class="back-button">
+            ← Back to Home
+        </a>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 My Website. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

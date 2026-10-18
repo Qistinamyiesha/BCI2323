@@ -1,0 +1,259 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Table | My Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #edf2fa;
+            color: #1c2940;
+        }
+
+        /* Navigation */
+        nav {
+            background: #111d35;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 15px;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #80b8ff;
+        }
+
+        /* Heading */
+        .page-heading {
+            text-align: center;
+            padding: 55px 20px 25px;
+        }
+
+        .page-heading h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .page-heading p {
+            color: #65738c;
+        }
+
+        /* Table Container */
+        .table-card {
+            max-width: 950px;
+            margin: 20px auto 60px;
+            padding: 35px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.07);
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        caption {
+            caption-side: top;
+            padding: 15px;
+            color: #254e9a;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        th {
+            background: #254e9a;
+            color: white;
+            padding: 17px;
+            text-align: left;
+        }
+
+        td {
+            padding: 17px;
+            border-bottom: 1px solid #e0e7f0;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f2f6fd;
+        }
+
+        tbody tr:hover {
+            background: #e4efff;
+        }
+
+        .note {
+            color: #66758b;
+            margin-top: 25px;
+            line-height: 1.7;
+            text-align: center;
+        }
+
+        /* Back Button */
+        .back-button {
+            display: block;
+            width: fit-content;
+            margin: 30px auto 0;
+            padding: 13px 25px;
+            background: #254e9a;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background: #16366d;
+        }
+
+        footer {
+            background: #111d35;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav div:last-child {
+                text-align: center;
+                line-height: 2;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .page-heading h1 {
+                font-size: 28px;
+            }
+
+            .table-card {
+                margin: 20px 15px 40px;
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <div class="logo">My Website</div>
+
+        <div>
+            <a href="../partD.html">Home</a>
+            <a href="personal-details.html">
+                Personal Details
+            </a>
+            <a href="my-table.html" class="active">
+                My Table
+            </a>
+            <a href="university.html">University</a>
+        </div>
+    </nav>
+
+    <!-- Page Heading -->
+    <section class="page-heading">
+        <h1>My Study Timetable</h1>
+        <p>Stay organised, stay productive</p>
+    </section>
+
+    <!-- HTML Table -->
+    <main class="table-card">
+
+        <div class="table-wrapper">
+            <table>
+                <caption>
+                    Table 1: Weekly Study Schedule
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Subject</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>Programming Fundamentals</td>
+                        <td>9:00 AM - 11:00 AM</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>Mathematics</td>
+                        <td>10:00 AM - 12:00 PM</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>Web Development</td>
+                        <td>2:00 PM - 4:00 PM</td>
+                    </tr>
+
+                    <tr>
+                        <td>Thursday</td>
+                        <td>Database Fundamentals</td>
+                        <td>11:00 AM - 1:00 PM</td>
+                    </tr>
+
+                    <tr>
+                        <td>Friday</td>
+                        <td>Software Engineering</td>
+                        <td>9:00 AM - 11:00 AM</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p class="note">
+            This is my weekly study timetable for the current semester. It helps me manage my time effectively and ensures I stay on top of my coursework.
+        </p>
+
+        <a href="../partD.html" class="back-button">
+            ← Back to Home
+        </a>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Website. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
