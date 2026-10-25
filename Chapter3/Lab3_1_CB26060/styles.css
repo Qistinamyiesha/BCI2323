@@ -1,0 +1,22 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f6fa;
+}
+
+h1 {
+    color: navy;
+    text-align: center;
+}
+
+p {
+    color: seagreen;
+}
+
+.highlight {
+    background-color: #fff3cd;
+}
+
+#club-name {
+    font-weight: bold;
+}
