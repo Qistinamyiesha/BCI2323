@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Movie Booking System</h1>
+    <form id="bookingForm">
+        <label for="customerName">Customer Name:</label>
+        <input type="text" id="customerName" name="customerName" required><br>
+
+        <label for="movieName">Movie Name:</label>
+        <select id="movieName" name="movieName">
+            <option value="Avengers: Endgame">Avengers: Endgame — RM 20</option>
+            <option value="The Lion King">The Lion King — RM 15</option>
+            <option value="Joker">Joker — RM 18</option>
+        </select><br>
+
+        <label for="timeSlot">Time Slot:</label>
+        <select id="timeSlot" name="timeSlot">
+            <option value="Morning">Morning</option>
+            <option value="Afternoon">Afternoon</option>
+            <option value="Evening">Evening</option>
+        </select><br>
+
+        <label for="numberOfTickets">Number of Tickets:</label>
+        <input type="number" id="numberOfTickets" name="numberOfTickets" min="1" step="1" required><br>
+
+        <button type="submit">Book Now</button>
+    </form>
+
+    <div id="output" role="status" aria-live="polite"></div>
+
+    <script src="booking.js" defer></script>
+</body>
+</html>
